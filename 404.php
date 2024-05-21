@@ -48,45 +48,23 @@
         </div>
         <!-- End Preloader -->
         
-        <!-- Coming Soon -->
-        <div class="coming-soon-area">
+        <!-- Error -->
+        <div class="error-area">
             <div class="d-table">
                 <div class="d-table-cell">
                     <div class="container">
-                        <div class="soon-item">
-                            <img src="assets/img/sican-coming-soon.png" alt="Soon">
-                            <div class="row">
-                                <div class="col-6 col-sm-6 col-lg-3">
-                                    <div class="coming-inner">
-                                        <h3 id="days"></h3>
-                                        <p>Days</p>
-                                    </div>
-                                </div>
-                                <div class="col-6 col-sm-6 col-lg-3">
-                                    <div class="coming-inner">
-                                        <h3 id="hours"></h3>
-                                        <p>Hours</p>
-                                    </div>
-                                </div>
-                                <div class="col-6 col-sm-6 col-lg-3">
-                                    <div class="coming-inner">
-                                        <h3 id="minutes"></h3>
-                                        <p>Minutes</p>
-                                    </div>
-                                </div>
-                                <div class="col-6 col-sm-6 col-lg-3">
-                                    <div class="coming-inner">
-                                        <h3 id="seconds"></h3>
-                                        <p>Seconds</p>
-                                    </div>
-                                </div>
-                            </div>
+                        <div class="error-content">
+                            <i class='bx bx-sad bx-flashing'></i>
+                            <h1>Opps!</h1>
+                            <h2>Here Is Some Problem</h2>
+                            <p>The page you are looking for it maybe deleted</p>
+                            <a href="index.php">Go To Home</a>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <!-- End Coming Soon -->
+        <!-- End Error -->
 
         <!-- Go Top -->
         <div class="go-top">

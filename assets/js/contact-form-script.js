@@ -1,5 +1,5 @@
 /*==============================================================*/
-// Raque Contact Form  JS
+// Contact Form JS
 /*==============================================================*/
 (function ($) {
     "use strict"; // Start of use strict
@@ -15,8 +15,7 @@
         }
     });
 
-
-    function submitForm(){
+    function submitForm() {
         // Initiate Variables With Form Content
         var name = $("#name").val();
         var email = $("#email").val();
@@ -24,17 +23,16 @@
         var phone_number = $("#phone_number").val();
         var message = $("#message").val();
 
-
         $.ajax({
             type: "POST",
             url: "assets/php/form-process.php",
             data: "name=" + name + "&email=" + email + "&msg_subject=" + msg_subject + "&phone_number=" + phone_number + "&message=" + message,
-            success : function(text){
-                if (text == "success"){
+            success : function(statustxt) {
+                if (statustxt == "success"){
                     formSuccess();
                 } else {
                     formError();
-                    submitMSG(false,text);
+                    submitMSG(false,statustxt);
                 }
             }
         });
