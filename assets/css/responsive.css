@@ -37,7 +37,7 @@
     padding-top: 15px;
     padding-bottom: 15px;
     text-align: center;
-    border-bottom: 1px solid rgba(221, 221, 221, 0.2705882353);
+    border-bottom: 1px solid #dddddd45;
   }
   .header-area .left {
     margin-bottom: 10px;
@@ -58,7 +58,8 @@
     text-align: center;
     padding-top: 8px;
     padding-bottom: 8px;
-    box-shadow: 0px 0px 15px 0px rgba(221, 221, 221, 0.2705882353);
+    -webkit-box-shadow: 0px 0px 15px 0px #dddddd45;
+            box-shadow: 0px 0px 15px 0px #dddddd45;
   }
   .side-nav .consultant-btn {
     padding: 10px 18px;
@@ -71,7 +72,7 @@
   }
   .banner-area:before {
     background: #000;
-    opacity: 0.8;
+    opacity: .80;
   }
   .banner-area .banner-shape img {
     display: none;
@@ -117,13 +118,15 @@
   .about-area .about-shape img:nth-child(2) {
     left: 40px;
     top: 140px;
-    animation: about-ani-two 15s linear infinite;
+    -webkit-animation: about-ani-two 15s linear infinite;
+            animation: about-ani-two 15s linear infinite;
   }
   .about-area .about-shape img:nth-child(3) {
     top: 100px;
     left: 30px;
     max-width: 210px;
-    animation: about-ani-one 5s linear infinite;
+    -webkit-animation: about-ani-one 5s linear infinite;
+            animation: about-ani-one 5s linear infinite;
   }
   .about-area .left-padding {
     padding-left: 15px;
@@ -159,7 +162,9 @@
     margin-bottom: 30px;
   }
   .about-area .about-content .bottom ul li {
-    flex: 0 0 100%;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 100%;
+            flex: 0 0 100%;
     max-width: 100%;
     text-align: center;
     margin-bottom: 30px;
@@ -178,11 +183,15 @@
     left: 0;
   }
   .about-area .about-content .years ul li {
-    flex: 0 0 100%;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 100%;
+            flex: 0 0 100%;
     max-width: 100%;
   }
   .about-area .about-content .years ul li:nth-child(2) {
-    flex: 0 0 100%;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 100%;
+            flex: 0 0 100%;
     max-width: 100%;
   }
   .about-area .about-content .years ul li .years-inner {
@@ -201,7 +210,7 @@
     font-size: 30px;
   }
   .about-area .about-content .years ul li .years-inner i {
-    opacity: 0.1;
+    opacity: .10;
   }
   .about-area .about-content .years ul li .years-inner img {
     display: none;
@@ -514,7 +523,9 @@
   }
   /*-- Provide --*/
   .provide-area .nav li {
-    flex: 0 0 100%;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 100%;
+            flex: 0 0 100%;
     max-width: 100%;
     margin-bottom: 10px;
   }
@@ -713,11 +724,15 @@
     font-size: 19px;
   }
   .widget-area .popular .popular-inner ul li {
-    flex: 0 0 25%;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 25%;
+            flex: 0 0 25%;
     max-width: 25%;
   }
   .widget-area .popular .popular-inner ul li:last-child {
-    flex: 0 0 65%;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 65%;
+            flex: 0 0 65%;
     max-width: 65%;
   }
   /*----- End Blog details CSS -----*/
@@ -784,6 +799,7 @@
     margin-right: 10px;
   }
 }
+
 @media only screen and (min-width: 576px) and (max-width: 767px) {
   .services-item {
     padding: 60px 10px 30px 10px;
@@ -792,6 +808,7 @@
     font-size: 20px;
   }
 }
+
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   /*----- Default CSS -----*/
   body {
@@ -831,7 +848,7 @@
     padding-top: 15px;
     padding-bottom: 15px;
     text-align: center;
-    border-bottom: 1px solid rgba(221, 221, 221, 0.2705882353);
+    border-bottom: 1px solid #dddddd45;
   }
   .header-area .left {
     margin-bottom: 10px;
@@ -871,7 +888,7 @@
   }
   .banner-area:before {
     background: #000;
-    opacity: 0.8;
+    opacity: .80;
   }
   .banner-area .banner-shape img {
     display: none;
@@ -1190,7 +1207,9 @@
   }
   /*-- Provide --*/
   .provide-area .nav li {
-    flex: 0 0 45%;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 45%;
+            flex: 0 0 45%;
     max-width: 45%;
     margin-bottom: 10px;
   }
@@ -1312,11 +1331,15 @@
     font-size: 22px;
   }
   .widget-area .popular .popular-inner ul li {
-    flex: 0 0 15%;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 15%;
+            flex: 0 0 15%;
     max-width: 15%;
   }
   .widget-area .popular .popular-inner ul li:last-child {
-    flex: 0 0 75%;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 75%;
+            flex: 0 0 75%;
     max-width: 75%;
   }
   /*----- End Blog details CSS -----*/
@@ -1342,6 +1365,7 @@
   }
   /*----- End Apply CSS -----*/
 }
+
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   .side-nav .consultant-btn {
     padding: 10px 10px;
@@ -1381,7 +1405,7 @@
     margin-left: 2px;
   }
   .about-area .about-content .years ul li .years-inner i {
-    opacity: 0.1;
+    opacity: .10;
   }
   .services-item {
     padding: 60px 15px 30px 15px;
@@ -1429,7 +1453,9 @@
     max-width: 400px;
   }
   .provide-area .nav li {
-    flex: 1 0 14.5%;
+    -webkit-box-flex: 1;
+        -ms-flex: 1 0 14.5%;
+            flex: 1 0 14.5%;
     max-width: 15.5%;
   }
   .provide-area .nav li a h3 {
@@ -1448,6 +1474,7 @@
     margin-right: 10px;
   }
 }
+
 @media only screen and (min-width: 1800px) {
   .banner-area-three .banner-slider-img {
     max-width: 780px;
@@ -1465,6 +1492,7 @@
     margin-top: 45px;
   }
 }
+
 @media only screen and (max-width: 991px) {
   .mean-container .mean-bar {
     background-color: #011a41;
@@ -1489,21 +1517,26 @@
     margin-top: 0;
   }
 }
+
 @media (min-width: 1300px) {
   .container, .container-lg, .container-md, .container-sm, .container-xl {
     max-width: 1320px;
     width: 100%;
   }
 }
+
 @media only screen and (min-width: 1200px) and (max-width: 1350px) {
   .banner-slider-img {
     max-width: 645px;
   }
   .provide-area .nav li {
-    flex: 0 0 14.5%;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 14.5%;
+            flex: 0 0 14.5%;
     max-width: 14.5%;
   }
   .provide-area .nav li a h3 {
     font-size: 18px;
   }
-}/*# sourceMappingURL=responsive.css.map */
+}
+/*# sourceMappingURL=responsive.css.map */
