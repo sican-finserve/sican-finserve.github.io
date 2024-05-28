@@ -248,7 +248,7 @@ jQuery(function ($) {
 		const hour = minute * 60;
 		const day = hour * 24;
 
-		let countDown = new Date('June 01, 2024 00:00:00').getTime();
+		let countDown = new Date('October 30, 2021 00:00:00').getTime();
 		setInterval(function() {
 			let now = new Date().getTime();
 			let distance = countDown - now;
@@ -259,7 +259,6 @@ jQuery(function ($) {
 			document.getElementById('seconds').innerText = Math.floor((distance % (minute)) / second);
 		}, second);
 	};
-
 
 	// Go Top JS
 	$(function(){
