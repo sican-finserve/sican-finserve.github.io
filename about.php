@@ -1,191 +1,6 @@
-<!DOCTYPE html>
-<html lang="zxx">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-        <!-- Bootstrap CSS -->
-        <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-        <!-- Mean Menu CSS -->
-        <link rel="stylesheet" href="assets/css/meanmenu.css">
-        <!-- Box Icons CSS -->
-        <link rel="stylesheet" href="assets/css/boxicons.min.css">
-        <!-- Owl Carousel JS -->
-        <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
-        <link rel="stylesheet" href="assets/css/owl.theme.default.min.css">
-        <!-- Animate CSS -->
-        <link rel="stylesheet" href="assets/css/animate.min.css">
-        <!-- Flat Icons CSS -->
-        <link rel="stylesheet" href="assets/fonts/flaticon.css">
-        <!-- Odometer CSS -->
-        <link rel="stylesheet" href="assets/css/odometer.min.css">
-        <!-- Nice Select CSS -->
-        <link rel="stylesheet" href="assets/css/nice-select.min.css">
-        <!-- Popup CSS -->
-        <link rel="stylesheet" href="assets/css/magnific-popup.min.css">
-        <!-- Style CSS -->
-        <link rel="stylesheet" href="assets/css/style.css">
-        <!-- Responsive CSS -->
-        <link rel="stylesheet" href="assets/css/responsive.css">
-        
-        <title>Finon - Finance and Investment HTML Template</title>
-
-        <link rel="icon" type="image/png" href="assets/img/favicon.png">
-    </head>
-    <body>
-        <!-- Preloader -->
-        <div class="loader">
-            <div class="d-table">
-                <div class="d-table-cell">
-                    <div class="spinner">
-                        <div class="double-bounce1"></div>
-                        <div class="double-bounce2"></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- End Preloader -->
-        
-        <!-- Navbar -->
-        <div class="navbar-area sticky-top">
-            <!-- Menu For Mobile Device -->
-            <div class="mobile-nav">
-                <a href="index.html" class="logo">
-                    <img src="assets/img/logo-two.png" alt="Logo">
-                </a>
-            </div>
-
-            <!-- Menu For Desktop Device -->
-            <div class="main-nav">
-                <div class="container">
-                    <nav class="navbar navbar-expand-md navbar-light">
-                        <a class="navbar-brand" href="index.html">
-                            <img src="assets/img/logo.png" alt="Logo">
-                        </a>
-                        <div class="collapse navbar-collapse mean-menu" id="navbarSupportedContent">
-                            <ul class="navbar-nav">
-                                <li class="nav-item">
-                                    <a href="#" class="nav-link dropdown-toggle">Home <i class="bx bx-chevron-down"></i></a>
-                                    <ul class="dropdown-menu">
-                                        <li class="nav-item">
-                                            <a href="index.html" class="nav-link">Home Demo One</a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a href="index-2.html" class="nav-link">Home Demo Two</a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a href="index-3.html" class="nav-link">Home Demo Three</a>
-                                        </li>
-                                    </ul>
-                                </li>
-                                <li class="nav-item">
-                                    <a href="#" class="nav-link dropdown-toggle">Pages <i class="bx bx-chevron-down"></i></a>
-                                    <ul class="dropdown-menu">
-                                        <li class="nav-item">
-                                            <a href="#" class="nav-link dropdown-toggle">Users <i class="bx bx-chevron-down"></i></a>
-                                            <ul class="dropdown-menu">
-                                                <li class="nav-item">
-                                                    <a href="sign-in.html" class="nav-link">Sign In</a>
-                                                </li>
-                                                <li class="nav-item">
-                                                    <a href="sign-up.html" class="nav-link">Sign Up</a>
-                                                </li>
-                                            </ul>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a href="loan.html" class="nav-link">Loan</a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a href="apply.html" class="nav-link">Apply Now</a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a href="testimonials.html" class="nav-link">Testimonials</a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a href="team.html" class="nav-link">Team</a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a href="faq.html" class="nav-link">FAQ</a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a href="404.html" class="nav-link">404 Error Page</a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a href="coming-soon.html" class="nav-link">Coming Soon</a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a href="privacy-policy.html" class="nav-link">Privacy Policy</a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a href="terms-conditions.html" class="nav-link">Terms & Conditions</a>
-                                        </li>
-                                    </ul>
-                                </li>
-                                <li class="nav-item">
-                                    <a href="about.html" class="nav-link active">About</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a href="#" class="nav-link dropdown-toggle">Services <i class="bx bx-chevron-down"></i></a>
-                                    <ul class="dropdown-menu">
-                                        <li class="nav-item">
-                                            <a href="services.html" class="nav-link">Services Style One</a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a href="services-2.html" class="nav-link">Services Style Two</a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a href="service-details.html" class="nav-link">Service Details</a>
-                                        </li>
-                                    </ul>
-                                </li>
-                                <li class="nav-item">
-                                    <a href="#" class="nav-link dropdown-toggle">Projects <i class="bx bx-chevron-down"></i></a>
-                                    <ul class="dropdown-menu">
-                                        <li class="nav-item">
-                                            <a href="projects.html" class="nav-link">Projects Style One</a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a href="projects-2.html" class="nav-link">Projects Style Two</a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a href="project-details.html" class="nav-link">Project Details</a>
-                                        </li>
-                                    </ul>
-                                </li>
-                                <li class="nav-item">
-                                    <a href="#" class="nav-link dropdown-toggle">Blog <i class="bx bx-chevron-down"></i></a>
-                                    <ul class="dropdown-menu">
-                                        <li class="nav-item">
-                                            <a href="blog.html" class="nav-link">Blog</a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a href="blog-details.html" class="nav-link">Blog Details</a>
-                                        </li>
-                                    </ul>
-                                </li>
-                                <li class="nav-item">
-                                    <a href="contact.html" class="nav-link">Contact</a>
-                                </li>
-                            </ul>
-                            <div class="side-nav">
-                                <div class="language">
-                                    <select>
-                                        <option>English</option>
-                                        <option>العربيّة</option>
-                                        <option>Deutsch</option>
-                                        <option>Português</option>
-                                    </select>
-                                </div>
-                                <a class="consultant-btn" href="#">
-                                    Free Consultant
-                                </a>
-                            </div>
-                        </div>
-                    </nav>
-                </div>
-            </div>
-        </div>
-        <!-- End Navbar -->
+<?php
+include 'includes/header.php';
+?>
 
         <!-- Page Title -->
         <div class="page-title-area">
@@ -196,7 +11,7 @@
                             <h2>About</h2>
                             <ul>
                                 <li>
-                                    <a href="index.html">Home</a>
+                                    <a href="index.php">Home</a>
                                 </li>
                                 <li>
                                     <span>About</span>
@@ -296,7 +111,7 @@
                     <span class="sub-title">How It Works</span>
                     <h2>Get Your Loan In 3 Easy Steps</h2>
                 </div>
-                <div class="row">
+                <div class="row justify-content-center">
 
                     <div class="col-sm-6 col-lg-4">
                         <div class="works-item">
@@ -314,7 +129,7 @@
                         </div>
                     </div>
 
-                    <div class="col-sm-6 offset-sm-3 offset-lg-0 col-lg-4">
+                    <div class="col-sm-6 col-lg-4">
                         <div class="works-item">
                             <i class="flaticon-contract"></i>
                             <h3><a href="#">Get Approved in 24 Hours</a></h3>
@@ -360,22 +175,22 @@
                             <img src="assets/img/team/team1.jpg" alt="Team">
                             <ul>
                                 <li>
-                                    <a href="#" target="_blank">
+                                    <a href="https://www.facebook.com/" target="_blank">
                                         <i class='bx bxl-facebook'></i>
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="#" target="_blank">
+                                    <a href="https://www.twitter.com/" target="_blank">
                                         <i class='bx bxl-twitter'></i>
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="#" target="_blank">
+                                    <a href="https://www.pinterest.com/" target="_blank">
                                         <i class='bx bxl-pinterest-alt'></i>
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="#" target="_blank">
+                                    <a href="https://www.linkedin.com/" target="_blank">
                                         <i class='bx bxl-linkedin'></i>
                                     </a>
                                 </li>
@@ -393,22 +208,22 @@
                             <img src="assets/img/team/team2.jpg" alt="Team">
                             <ul>
                                 <li>
-                                    <a href="#" target="_blank">
+                                    <a href="https://www.facebook.com/" target="_blank">
                                         <i class='bx bxl-facebook'></i>
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="#" target="_blank">
+                                    <a href="https://www.twitter.com/" target="_blank">
                                         <i class='bx bxl-twitter'></i>
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="#" target="_blank">
+                                    <a href="https://www.pinterest.com/" target="_blank">
                                         <i class='bx bxl-pinterest-alt'></i>
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="#" target="_blank">
+                                    <a href="https://www.linkedin.com/" target="_blank">
                                         <i class='bx bxl-linkedin'></i>
                                     </a>
                                 </li>
@@ -426,22 +241,22 @@
                             <img src="assets/img/team/team3.jpg" alt="Team">
                             <ul>
                                 <li>
-                                    <a href="#" target="_blank">
+                                    <a href="https://www.facebook.com/" target="_blank">
                                         <i class='bx bxl-facebook'></i>
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="#" target="_blank">
+                                    <a href="https://www.twitter.com/" target="_blank">
                                         <i class='bx bxl-twitter'></i>
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="#" target="_blank">
+                                    <a href="https://www.pinterest.com/" target="_blank">
                                         <i class='bx bxl-pinterest-alt'></i>
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="#" target="_blank">
+                                    <a href="https://www.linkedin.com/" target="_blank">
                                         <i class='bx bxl-linkedin'></i>
                                     </a>
                                 </li>
@@ -459,22 +274,22 @@
                             <img src="assets/img/team/team4.jpg" alt="Team">
                             <ul>
                                 <li>
-                                    <a href="#" target="_blank">
+                                    <a href="https://www.facebook.com/" target="_blank">
                                         <i class='bx bxl-facebook'></i>
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="#" target="_blank">
+                                    <a href="https://www.twitter.com/" target="_blank">
                                         <i class='bx bxl-twitter'></i>
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="#" target="_blank">
+                                    <a href="https://www.pinterest.com/" target="_blank">
                                         <i class='bx bxl-pinterest-alt'></i>
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="#" target="_blank">
+                                    <a href="https://www.linkedin.com/" target="_blank">
                                         <i class='bx bxl-linkedin'></i>
                                     </a>
                                 </li>
@@ -492,22 +307,22 @@
                             <img src="assets/img/team/team5.jpg" alt="Team">
                             <ul>
                                 <li>
-                                    <a href="#" target="_blank">
+                                    <a href="https://www.facebook.com/" target="_blank">
                                         <i class='bx bxl-facebook'></i>
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="#" target="_blank">
+                                    <a href="https://www.twitter.com/" target="_blank">
                                         <i class='bx bxl-twitter'></i>
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="#" target="_blank">
+                                    <a href="https://www.pinterest.com/" target="_blank">
                                         <i class='bx bxl-pinterest-alt'></i>
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="#" target="_blank">
+                                    <a href="https://www.linkedin.com/" target="_blank">
                                         <i class='bx bxl-linkedin'></i>
                                     </a>
                                 </li>
@@ -525,22 +340,22 @@
                             <img src="assets/img/team/team6.jpg" alt="Team">
                             <ul>
                                 <li>
-                                    <a href="#" target="_blank">
+                                    <a href="https://www.facebook.com/" target="_blank">
                                         <i class='bx bxl-facebook'></i>
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="#" target="_blank">
+                                    <a href="https://www.twitter.com/" target="_blank">
                                         <i class='bx bxl-twitter'></i>
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="#" target="_blank">
+                                    <a href="https://www.pinterest.com/" target="_blank">
                                         <i class='bx bxl-pinterest-alt'></i>
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="#" target="_blank">
+                                    <a href="https://www.linkedin.com/" target="_blank">
                                         <i class='bx bxl-linkedin'></i>
                                     </a>
                                 </li>
@@ -657,161 +472,8 @@
             </div>
         </section>
         <!-- End FAQ -->
+<?php
 
-        <!-- Footer -->
-        <footer class="footer-area pt-100 pb-70">
-            <div class="container">
-                <div class="row">
-                    
-                    <div class="col-sm-6 col-lg-4">
-                        <div class="footer-item">
-                            <div class="footer-logo">
-                                <a class="logo" href="index.html">
-                                    <img src="assets/img/logo-two.png" alt="Logo">
-                                </a>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices </p>
-                                <ul>
-                                    <li>
-                                        <i class='bx bx-phone-call'></i>
-                                        <span>Phone:</span>
-                                        <a href="tel:882569756">882-569-756</a>
-                                    </li>
-                                    <li>
-                                        <i class='bx bx-mail-send'></i>
-                                        <span>Email:</span>
-                                        <a href="mailto:hello@finon.com">hello@finon.com</a>
-                                    </li>
-                                    <li>
-                                        <i class='bx bx-current-location'></i>
-                                        <span>Address:</span>
-                                        <a href="#">4578 Marmora Road, UK</a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
+include 'includes/footer.php';
 
-                    <div class="col-sm-6 col-lg-2">
-                        <div class="footer-item">
-                            <div class="footer-links">
-                                <h3>Quick Links</h3>
-                                <ul>
-                                    <li>
-                                        <a href="about.html">About</a>
-                                    </li>
-                                    <li>
-                                        <a href="services.html">Services</a>
-                                    </li>
-                                    <li>
-                                        <a href="projects.html">Projects</a>
-                                    </li>
-                                    <li>
-                                        <a href="faq.html">FAQ</a>
-                                    </li>
-                                    <li>
-                                        <a href="blog.html">Blog</a>
-                                    </li>
-                                    <li>
-                                        <a href="privacy-policy.html">Privacy Policy</a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-sm-6 col-lg-3">
-                        <div class="footer-item">
-                            <h3>Newsletter</h3>
-                            <div class="footer-newsletter">
-                                <p>Accusamus et iusto odio quas molestias except.</p>
-                                <form class="newsletter-form" data-toggle="validator">
-                                    <input type="email" class="form-control" placeholder="Enter email address" name="EMAIL" required autocomplete="off">
-            
-                                    <button class="btn common-btn" type="submit">
-                                        Subscribe
-                                        <span></span>
-                                    </button>
-                                    <div id="validator-newsletter" class="form-result"></div>
-                                </form>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-sm-6 col-lg-3">
-                        <div class="footer-item">
-                            <div class="footer-links">
-                                <h3>What We Do</h3>
-                                <ul>
-                                    <li>
-                                        <a href="about.html">Financial Advice</a>
-                                    </li>
-                                    <li>
-                                        <a href="services.html">Planning Strategies</a>
-                                    </li>
-                                    <li>
-                                        <a href="projects.html">Investment Trending</a>
-                                    </li>
-                                    <li>
-                                        <a href="faq.html">Wealth Commitment</a>
-                                    </li>
-                                    <li>
-                                        <a href="blog.html">Our Services</a>
-                                    </li>
-                                    <li>
-                                        <a href="privacy-policy.html">States Element</a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-        </footer>
-        <!-- End Footer -->
-
-        <!-- Copyright -->
-        <div class="copyright-area">
-            <div class="container">
-                <div class="copyright-item">
-                    <p>Copyright ©2021 Finon. Designed By <a href="https://envytheme.com/" target="_blank">EnvyTheme</a></p>
-                </div>
-            </div>
-        </div>
-        <!-- End Copyright -->
-
-        <!-- Go Top -->
-        <div class="go-top">
-            <i class='bx bxs-up-arrow'></i>
-            <i class='bx bxs-up-arrow'></i>
-        </div>
-        <!-- End Go Top -->
-
-
-        <!-- Essential JS -->
-        <script src="assets/js/jquery-3.5.1.min.js"></script>
-        <script src="assets/js/popper.min.js"></script>
-        <script src="assets/js/bootstrap.min.js"></script>
-        <!-- Form Validator JS -->
-        <script src="assets/js/form-validator.min.js"></script>
-        <!-- Contact JS -->
-        <script src="assets/js/contact-form-script.js"></script>
-        <!-- Ajax Chip JS -->
-        <script src="assets/js/jquery.ajaxchimp.min.js"></script>
-        <!-- Mean Menu JS -->
-        <script src="assets/js/jquery.meanmenu.js"></script>
-        <!-- Owl Carousel JS -->
-        <script src="assets/js/owl.carousel.min.js"></script>
-        <!-- Wow JS -->
-        <script src="assets/js/wow.min.js"></script>
-        <!-- Odometer JS -->
-        <script src="assets/js/odometer.min.js"></script>
-        <script src="assets/js/jquery.appear.min.js"></script>
-        <!-- Nice Select JS -->
-        <script src="assets/js/jquery.nice-select.min.js"></script>
-        <!-- Popup JS -->
-        <script src="assets/js/jquery.magnific-popup.min.js"></script>
-        <!-- Custom JS -->
-        <script src="assets/js/custom.js"></script>
-    </body>
-</html>
+?>
