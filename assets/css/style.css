@@ -3795,6 +3795,14 @@ footer {
   color: #fff;
 }
 
+.sican-icon {
+  background: url('/assets/img/ico-sican-pointer.png');
+  height: 30px;
+  width: 23px;
+  display: block;
+  /* Other styles here */
+}
+
 /*----- End Home Demo Three CSS -----*/
 /*----- About CSS -----*/
 .page-title-area {
