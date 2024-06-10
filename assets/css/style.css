@@ -2596,7 +2596,7 @@ footer {
 /*-- Video --*/
 .video-area {
   height: 620px;
-  background-image: url("../img/video-bg-1.jpg");
+  background-image: url("../img/background-image.jpg");
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
@@ -3808,7 +3808,7 @@ footer {
 /*----- End Home Demo Three CSS -----*/
 /*----- About CSS -----*/
 .page-title-area {
-  background-image: url("../img/video-bg-1.jpg");
+  background-image: url("../img/background-image.jpg");
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
