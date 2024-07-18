@@ -2695,7 +2695,7 @@ footer {
   list-style-type: none;
   display: block;
   position: relative;
-  padding-left: 65px;
+  /* padding-left: 65px; */
   margin-bottom: 15px;
 }
 
