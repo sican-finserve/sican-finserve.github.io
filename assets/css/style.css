@@ -2056,6 +2056,7 @@ footer {
 
 .main-nav.two nav .navbar-nav .nav-item a {
   color: #074a75;
+  padding-top: 20px;
 }
 
 .main-nav.two nav .navbar-nav .nav-item a:hover,
