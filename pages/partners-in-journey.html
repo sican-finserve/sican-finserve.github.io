@@ -31,15 +31,6 @@
     <!-- Responsive CSS -->
     <link rel="stylesheet" href="/assets/css/responsive.css">
 
-    <style>
-        .partner-logo {
-            width: 100%;
-            height: auto;
-            display: block;
-            margin: 0 auto;
-        }
-    </style>
-
     <!--=== Title & Favicon ===-->
     <title>SiCAN FinServe</title>
     <link rel="icon" type="image/png" href="/assets/img/favicon.ico">
@@ -54,6 +45,42 @@
         });
     </script>
 
+    <style>
+        .item {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 400px;
+            /* Adjust height as needed */
+        }
+
+        .partner-logo {
+            max-width: 300px;
+            /* Adjust the max-width as needed */
+            max-height: 300px;
+            /* Adjust the max-height as needed */
+            width: auto;
+            height: auto;
+        }
+
+        .owl-nav button {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background: none;
+            border: none;
+            font-size: 2rem;
+            color: #333;
+        }
+
+        .owl-nav .owl-prev {
+            left: -30px;
+        }
+
+        .owl-nav .owl-next {
+            right: -30px;
+        }
+    </style>
 
 </head>
 
@@ -112,27 +139,35 @@
                     </div>
                 </div>
 
+
                 <div class="container">
                     <div class="row align-items-center">
-                        <div class="col-sm-3 col-lg-3">
-                            <img src="/assets/img/sican/partner_afc.jpeg" class="partner-logo" />
-                        </div>
-                        <div class="col-sm-1 col-lg-1"></div>
-                        <div class="col-sm-3 col-lg-3">
-                            <img src="/assets/img/sican/partner_better_world.jpeg" class="partner-logo" />
-                        </div>
-                    <!-- </div>
-                    <div class="row align-items-center"> -->
-                        <div class="col-sm-3 col-lg-3">
-                            <img src="/assets/img/sican/partner_hdfc.jpeg" class="partner-logo" />
-                        </div>
-                        <div class="col-sm-1 col-lg-1"></div>
-                        <div class="col-sm-3 col-lg-3">
-                            <img src="/assets/img/sican/partner_m2.jpeg" class="partner-logo" />
+                        <div class="col-12">
+                            <div class="owl-carousel owl-theme">
+                                <div class="item">
+                                    <img src="/assets/img/sican/partner_afc.jpeg" class="partner-logo"
+                                        alt="Partner AFC">
+                                </div>
+                                <div class="item">
+                                    <img src="/assets/img/sican/partner_better_world.jpeg" class="partner-logo"
+                                        alt="Partner Better World">
+                                </div>
+                                <div class="item">
+                                    <img src="/assets/img/sican/partner_hdfc.jpeg" class="partner-logo"
+                                        alt="Partner HDFC">
+                                </div>
+                                <div class="item">
+                                    <img src="/assets/img/sican/partner_m2.jpeg" class="partner-logo" alt="Partner M2">
+                                </div>
+                                <div class="item">
+                                    <img src="/assets/img/sican/partner_utkarsh.png" class=" partner-logo"
+                                        alt="Partner utkarsh">
+                                </div>
+                                <!-- Add more items as needed -->
+                            </div>
                         </div>
                     </div>
                 </div>
-
             </div>
         </div>
     </div>
@@ -174,6 +209,33 @@
     <script src="/assets/js/jquery.magnific-popup.min.js"></script>
     <!-- Custom JS -->
     <script src="/assets/js/custom.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $(".owl-carousel").owlCarousel({
+                items: 4,
+                loop: true,
+                margin: 10,
+                nav: true,
+                dots: true,
+                autoplay: true,
+                autoplayTimeout: 3000,
+                autoplayHoverPause: true,
+                navText: ["<span class='owl-nav-prev'>&#10094;</span>", "<span class='owl-nav-next'>&#10095;</span>"],
+                responsive: {
+                    0: {
+                        items: 1
+                    },
+                    600: {
+                        items: 2
+                    },
+                    1000: {
+                        items: 4
+                    }
+                }
+            });
+        });
+    </script>
 </body>
 
 </html>
