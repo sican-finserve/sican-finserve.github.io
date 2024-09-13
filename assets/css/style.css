@@ -3799,7 +3799,7 @@ footer {
 }
 
 .sican-icon {
-  background: url('/assets/img/ico-sican-pointer.png');
+  background: url('/assets/img/ico-sican-pointer-1.png');
   height: 30px;
   width: 23px;
   display: block;
@@ -3809,7 +3809,7 @@ footer {
 /*----- End Home Demo Three CSS -----*/
 /*----- About CSS -----*/
 .page-title-area {
-  background-image: url("../img/banner/bg-3.png");
+  background-image: url("../img/banner/bg-4.png");
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
