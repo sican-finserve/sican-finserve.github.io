@@ -44,7 +44,30 @@
             $("#footer").load("../includes/footer.html");
         });
     </script>
+<style>
+        .form-submit {
+            background-color: orange; /* Orange color for Submit button */
+            border: none;
+            color: white;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+        }
 
+        .form-submit.resetBtn {
+            background-color: blue; /* Blue color for Reset button */
+            border: none;
+            color: white;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        .form-submit:hover,
+        .resetBtn:hover {
+            opacity: 0.9; /* Slight hover effect */
+        }
+    </style>
 </head>
 
 <body>
