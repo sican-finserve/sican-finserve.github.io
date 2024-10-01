@@ -67,6 +67,31 @@
         .resetBtn:hover {
             opacity: 0.9; /* Slight hover effect */
         }
+		.form-container {
+            display: flex;
+            gap: 20px;
+        }
+
+        .feedbackLeft,
+        .feedbackRight {
+            flex: 1;
+        }
+
+        .phAnimate {
+            margin-bottom: 15px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        input,
+        select {
+            width: 100%;
+            padding: 10px;
+            box-sizing: border-box;
+        }
     </style>
 </head>
 
@@ -150,7 +175,7 @@
                     </div>
                     <div class="phAnimate">
                         <aside for="query-phone"><b>*</b>Contact No</aside>
-                        <input name="txtPhone" type="text" maxlength="15" id="txtPhone" class="form-control" onkeypress="return blockNonNumbers(this, event, true, false);" autocomplete="off">
+                        <input name="txtPhone" type="text" maxlength="10" id="txtPhone" class="form-control" onkeypress="return blockNonNumbers(this, event, true, false);" autocomplete="off">
                     </div>
                     <div class="phAnimate">
                         <aside for="query-email"><b>*</b>Email</aside>
