@@ -1898,5 +1898,13 @@
     font-size: 18px;
   }
 }
+/* === Fix: Mobile me images hide na ho === */
+@media only screen and (max-width: 767px) {
+    .works-img img {
+        display: block !important;
+        max-width: 100%;
+        height: auto;
+    }
+}
 
 /*# sourceMappingURL=responsive.css.map */
