@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html>
-
 <head>
     <!--=== Meta Tags ===-->
     <meta charset="UTF-8">
@@ -37,104 +36,237 @@
 
     <script src="https://code.jquery.com/jquery-3.3.1.js"
         integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous">
-        </script>
+    </script>
     <script>
         $(function () {
             $("#header").load("../includes/header.html");
             $("#footer").load("../includes/footer.html");
         });
     </script>
-<style>
-/* CUSTOM CIRCLE LAYOUT STYLE */
-.container {
-  position: relative;
-}
 
-.left-panel h1 {
-  color: orange;
-  font-weight: bold;
-  margin: 0;
-  font-size: 36px;
-}
-.left-panel h2 {
-  margin-top: 10px;
-  font-size: 36px;
-  line-height: 1.2;
-  word-break: break-word;
-}
+    <style>
+        /* ENHANCED CIRCLE LAYOUT STYLE */
+        .core-strength-section {
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            padding: 80px 0;
+            overflow: hidden;
+        }
 
-.right-panel {
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 40px 0;
-}
+        .core-strength-container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+            gap: 60px;
+        }
 
-.circle {
-  width: 300px;
-  height: 300px;
-  border-radius: 50%;
-  border: 8px solid #0e4b74;
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 0 auto;
-}
-.circle img {
-  width: 70px;
-  height: auto;
-}
+        .left-panel {
+            flex: 1;
+            min-width: 300px;
+        }
 
-.point {
-  position: absolute;
-  width: 140px;
-  text-align: center;
-  font-size: 13px;
-}
-.point .num {
-  font-weight: bold;
-  background: #0e4b74;
-  color: white;
-  border-radius: 50%;
-  width: 30px;
-  height: 30px;
-  display: inline-block;
-  line-height: 30px;
-  margin-bottom: 5px;
-}
-.point.orange .num {
-  background: orange;
-}
+        .left-panel h1 {
+            color: #ff8c00;
+            font-weight: 300;
+            margin: 0;
+            font-size: 48px;
+            letter-spacing: 2px;
+        }
 
-/* Positioning 8 points around the circle */
-.p1 { top: -50px; left: 50%; transform: translateX(-50%); }
-.p2 { top: 40px; right: -60px; }
-.p3 { top: 150px; right: -90px; }
-.p4 { bottom: 40px; right: -60px; }
-.p5 { bottom: -50px; left: 50%; transform: translateX(-50%); }
-.p6 { bottom: 40px; left: -70px; }
-.p7 { top: 150px; left: -90px; }
-.p8 { top: 40px; left: -60px; }
+        .left-panel h2 {
+            margin-top: 5px;
+            font-size: 48px;
+            line-height: 1.1;
+            font-weight: 900;
+            color: #2c3e50;
+            letter-spacing: 1px;
+        }
 
-@media screen and (max-width: 768px) {
-  .circle {
-    width: 300px;
-    height: 300px;
-  }
-  .point {
-    font-size: 11px;
-    width: 120px;
-  }
-  .point .num {
-    width: 25px;
-    height: 25px;
-    line-height: 25px;
-  }
-}
-</style>
+        .right-panel {
+            flex: 1;
+            min-width: 500px;
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 40px 0;
+        }
 
+        .circle-container {
+            position: relative;
+            width: 400px;
+            height: 400px;
+        }
+
+        .circle {
+            width: 300px;
+            height: 300px;
+            border-radius: 50%;
+            border: 8px solid #0e4b74;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: white;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        }
+
+        .circle img {
+            width: 80px;
+            height: auto;
+        }
+
+        .point {
+            position: absolute;
+            width: 160px;
+            text-align: center;
+            font-size: 12px;
+            font-weight: 500;
+            color: #2c3e50;
+            line-height: 1.3;
+        }
+
+        .point .num {
+            font-weight: bold;
+            background: #0e4b74;
+            color: white;
+            border-radius: 50%;
+            width: 35px;
+            height: 35px;
+            display: inline-block;
+            line-height: 35px;
+            margin-bottom: 8px;
+            font-size: 14px;
+            transition: all 0.3s ease;
+        }
+
+        .point.orange .num {
+            background: #ff8c00;
+        }
+
+        .point:hover .num {
+            transform: scale(1.1);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        }
+
+        /* Enhanced positioning for 8 points around the circle */
+        .p1 { 
+            top: -30px; 
+            left: 50%; 
+            transform: translateX(-50%); 
+        }
+        .p2 { 
+            top: 30px; 
+            right: -80px; 
+        }
+        .p3 { 
+            top: 130px; 
+            right: -100px; 
+        }
+        .p4 { 
+            bottom: 30px; 
+            right: -80px; 
+        }
+        .p5 { 
+            bottom: -30px; 
+            left: 50%; 
+            transform: translateX(-50%); 
+        }
+        .p6 { 
+            bottom: 30px; 
+            left: -100px; 
+        }
+        .p7 { 
+            top: 130px; 
+            left: -100px; 
+        }
+        .p8 { 
+            top: 30px; 
+            left: -80px; 
+        }
+
+        /* Responsive Design */
+        @media screen and (max-width: 768px) {
+            .core-strength-container {
+                flex-direction: column;
+                gap: 40px;
+                text-align: center;
+            }
+            
+            .left-panel h1,
+            .left-panel h2 {
+                font-size: 32px;
+            }
+            
+            .circle-container {
+                width: 350px;
+                height: 350px;
+            }
+            
+            .circle {
+                width: 250px;
+                height: 250px;
+            }
+            
+            .point {
+                font-size: 10px;
+                width: 120px;
+            }
+            
+            .point .num {
+                width: 28px;
+                height: 28px;
+                line-height: 28px;
+                font-size: 12px;
+            }
+            
+            .p1 { top: -25px; }
+            .p2 { top: 25px; right: -60px; }
+            .p3 { top: 110px; right: -70px; }
+            .p4 { bottom: 25px; right: -60px; }
+            .p5 { bottom: -25px; }
+            .p6 { bottom: 25px; left: -70px; }
+            .p7 { top: 110px; left: -70px; }
+            .p8 { top: 25px; left: -60px; }
+        }
+
+        @media screen and (max-width: 480px) {
+            .core-strength-section {
+                padding: 50px 0;
+            }
+            
+            .circle-container {
+                width: 300px;
+                height: 300px;
+            }
+            
+            .circle {
+                width: 200px;
+                height: 200px;
+            }
+            
+            .circle img {
+                width: 60px;
+            }
+            
+            .point {
+                font-size: 9px;
+                width: 100px;
+            }
+            
+            .point .num {
+                width: 24px;
+                height: 24px;
+                line-height: 24px;
+                font-size: 10px;
+            }
+        }
+    </style>
 </head>
 
 <body>
@@ -152,8 +284,6 @@
     <!-- End Preloader -->
 
     <div id="header"></div>
-
-
 
     <!-- Page Title -->
     <div class="page-title-area">
@@ -176,9 +306,6 @@
         </div>
     </div>
     <!-- End Page Title -->
-
-
-				
 
     <!-- CORE STRENGTH Section -->
     <section class="core-strength-section">
@@ -238,8 +365,6 @@
         </div>
     </section>
 
-
-
     <div id="footer"></div>
 
     <!-- Go Top -->
@@ -274,5 +399,4 @@
     <!-- Custom JS -->
     <script src="/assets/js/custom.js"></script>
 </body>
-
 </html>
