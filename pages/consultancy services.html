@@ -1,261 +1,241 @@
 <!DOCTYPE html>
 <html>
+
 <head>
+    <!--=== Meta Tags ===-->
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>SiCAN FinServe - Core Strength</title>
-    
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f8f9fa;
-        }
-        
-        .core-strength-section {
-            min-height: 100vh;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            padding: 40px 20px;
-            background: linear-gradient(135deg, #e8f0fe 0%, #f5f7fa 100%);
-        }
-        
-        .main-container {
-            display: flex;
-            align-items: center;
-            gap: 80px;
-            max-width: 1200px;
-            width: 100%;
-        }
-        
-        .left-section {
-            flex: 1;
-            max-width: 300px;
-        }
-        
-        .left-section h1 {
-            font-size: 42px;
-            color: #ff8c00;
-            font-weight: normal;
-            margin: 0;
-            line-height: 1;
-        }
-        
-        .left-section h2 {
-            font-size: 42px;
-            color: #000;
-            font-weight: bold;
-            margin: 0;
-            line-height: 1.1;
-        }
-        
-        .right-section {
-            flex: 1;
-            position: relative;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-        
-        .circle-wrapper {
-            position: relative;
-            width: 400px;
-            height: 400px;
-        }
-        
-        .center-circle {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            width: 200px;
-            height: 200px;
-            border-radius: 50%;
-            background: white;
-            border: 6px solid #0e4b74;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-        }
-        
-        .center-circle img {
-            width: 60px;
-            height: auto;
-        }
-        
-        .strength-point {
-            position: absolute;
-            width: 140px;
-            text-align: center;
-            font-size: 11px;
-            font-weight: 500;
-            color: #333;
-            line-height: 1.2;
-        }
-        
-        .strength-point .number {
-            display: inline-block;
-            width: 28px;
-            height: 28px;
-            border-radius: 50%;
-            background: #0e4b74;
-            color: white;
-            line-height: 28px;
-            font-weight: bold;
-            font-size: 12px;
-            margin-bottom: 5px;
-        }
-        
-        .strength-point.orange .number {
-            background: #ff8c00;
-        }
-        
-        /* Exact positioning as per image - calculated mathematically */
-        .point-1 {
-            top: 0;
-            left: 50%;
-            transform: translateX(-50%);
-        }
-        
-        .point-2 {
-            top: 25px;
-            right: 25px;
-        }
-        
-        .point-3 {
-            top: 50%;
-            right: 0;
-            transform: translateY(-50%);
-        }
-        
-        .point-4 {
-            bottom: 25px;
-            right: 25px;
-        }
-        
-        .point-5 {
-            bottom: 0;
-            left: 50%;
-            transform: translateX(-50%);
-        }
-        
-        .point-6 {
-            bottom: 25px;
-            left: 25px;
-        }
-        
-        .point-7 {
-            top: 50%;
-            left: 0;
-            transform: translateY(-50%);
-        }
-        
-        .point-8 {
-            top: 25px;
-            left: 25px;
-        }
-        
-        /* Responsive Design */
-        @media (max-width: 768px) {
-            .main-container {
-                flex-direction: column;
-                gap: 40px;
-                text-align: center;
-            }
-            
-            .left-section h1,
-            .left-section h2 {
-                font-size: 32px;
-            }
-            
-            .circle-wrapper {
-                width: 320px;
-                height: 320px;
-            }
-            
-            .center-circle {
-                width: 160px;
-                height: 160px;
-            }
-            
-            .strength-point {
-                width: 100px;
-                font-size: 10px;
-            }
-            
-            .strength-point .number {
-                width: 24px;
-                height: 24px;
-                line-height: 24px;
-                font-size: 10px;
-            }
-        }
-    </style>
+
+    <!--=== Bootstrap Min CSS ===-->
+    <link rel="stylesheet" href="/assets/css/bootstrap.min.css">
+    <!-- Mean Menu CSS -->
+    <link rel="stylesheet" href="/assets/css/meanmenu.css">
+    <!--=== Box Icons Min CSS ===-->
+    <link rel="stylesheet" href="/assets/css/boxicons.min.css">
+    <!--=== Owl Carousel Min JS ===-->
+    <link rel="stylesheet" href="/assets/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="/assets/css/owl.theme.default.min.css">
+    <!--=== Animate Min CSS ===-->
+    <link rel="stylesheet" href="/assets/css/animate.min.css">
+    <!-- Flat Icons CSS -->
+    <link rel="stylesheet" href="/assets/fonts/flaticon.css">
+    <!--=== Odometer Min CSS ===-->
+    <link rel="stylesheet" href="/assets/css/odometer.min.css">
+    <!-- Nice Select CSS -->
+    <link rel="stylesheet" href="/assets/css/nice-select.min.css">
+    <!--== Magnific Popup Min CSS ===-->
+    <link rel="stylesheet" href="/assets/css/magnific-popup.min.css">
+    <!-- Style CSS -->
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <!-- Responsive CSS -->
+    <link rel="stylesheet" href="/assets/css/responsive.css">
+
+    <!--=== Title & Favicon ===-->
+    <title>SiCAN FinServe</title>
+    <link rel="icon" type="image/png" href="/assets/img/favicon.ico">
+
+    <script src="https://code.jquery.com/jquery-3.3.1.js"
+        integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous">
+        </script>
+    <script>
+        $(function () {
+            $("#header").load("../includes/header.html");
+            $("#footer").load("../includes/footer.html");
+        });
+    </script>
+<style>
+/* CUSTOM CIRCLE LAYOUT STYLE */
+.container {
+  position: relative;
+}
+
+.left-panel h1 {
+  color: orange;
+  font-weight: bold;
+  margin: 0;
+  font-size: 36px;
+}
+.left-panel h2 {
+  margin-top: 10px;
+  font-size: 36px;
+  line-height: 1.2;
+  word-break: break-word;
+}
+
+.right-panel {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 0;
+}
+
+.circle {
+  width: 400px;
+  height: 400px;
+  border-radius: 50%;
+  border: 8px solid #0e4b74;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+}
+.circle img {
+  width: 70px;
+  height: auto;
+}
+
+.point {
+  position: absolute;
+  width: 140px;
+  text-align: center;
+  font-size: 13px;
+}
+.point .num {
+  font-weight: bold;
+  background: #0e4b74;
+  color: white;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  display: inline-block;
+  line-height: 30px;
+  margin-bottom: 5px;
+}
+.point.orange .num {
+  background: orange;
+}
+
+/* Positioning 8 points around the circle */
+.p1 { top: -50px; left: 50%; transform: translateX(-50%); }
+.p2 { top: 40px; right: -60px; }
+.p3 { top: 150px; right: -90px; }
+.p4 { bottom: 40px; right: -60px; }
+.p5 { bottom: -50px; left: 50%; transform: translateX(-50%); }
+.p6 { bottom: 40px; left: -70px; }
+.p7 { top: 150px; left: -90px; }
+.p8 { top: 40px; left: -60px; }
+
+@media screen and (max-width: 768px) {
+  .circle {
+    width: 300px;
+    height: 300px;
+  }
+  .point {
+    font-size: 11px;
+    width: 120px;
+  }
+  .point .num {
+    width: 25px;
+    height: 25px;
+    line-height: 25px;
+  }
+}
+</style>
+
 </head>
 
 <body>
-    <section class="core-strength-section">
-        <div class="main-container">
-            <div class="left-section">
-                <h1>OUR</h1>
-                <h2>CORE<br>STRENGTH</h2>
+    <!-- Preloader -->
+    <div class="loader">
+        <div class="d-table">
+            <div class="d-table-cell">
+                <div class="spinner">
+                    <div class="double-bounce1"></div>
+                    <div class="double-bounce2"></div>
+                </div>
             </div>
-            
-            <div class="right-section">
-                <div class="circle-wrapper">
-                    <div class="center-circle">
-                        <img src="/assets/img/sicanlogo.png" alt="SiCAN Logo">
-                    </div>
-                    
-                    <div class="strength-point point-1 orange">
-                        <div class="number">01</div>
-                        Understanding of Inclusion Approach<br>and Development Management
-                    </div>
-                    
-                    <div class="strength-point point-2 orange">
-                        <div class="number">02</div>
-                        Industry<br>Foresightedness
-                    </div>
-                    
-                    <div class="strength-point point-3 orange">
-                        <div class="number">03</div>
-                        Sectoral on-field<br>Expertise
-                    </div>
-                    
-                    <div class="strength-point point-4 orange">
-                        <div class="number">04</div>
-                        Corporate<br>Governance
-                    </div>
-                    
-                    <div class="strength-point point-5">
-                        <div class="number">05</div>
-                        New Age Tech-platform
-                    </div>
-                    
-                    <div class="strength-point point-6">
-                        <div class="number">06</div>
-                        Research &<br>Development
-                    </div>
-                    
-                    <div class="strength-point point-7">
-                        <div class="number">07</div>
-                        Agile in Innovation
-                    </div>
-                    
-                    <div class="strength-point point-8">
-                        <div class="number">08</div>
-                        Organisational Culture
+        </div>
+    </div>
+    <!-- End Preloader -->
+
+    <div id="header"></div>
+
+
+
+    <!-- Page Title -->
+    <div class="page-title-area">
+        <div class="d-table">
+            <div class="d-table-cell">
+                <div class="container">
+                    <div class="title-content">
+                        <h2>Consultancy Services</h2>
+                        <ul>
+                            <li>
+                                <a href="/">Home</a>
+                            </li>
+                            <li>
+                                <span>Consultancy Services</span>
+                            </li>
+                        </ul>
                     </div>
                 </div>
             </div>
         </div>
-    </section>
+    </div>
+    <!-- End Page Title -->
+
+
+				 <div class="container">
+    <div class="left-panel">
+      <h1>OUR</h1>
+      <h2>CORE<br>STRENGTH</h2>
+    </div>
+	Our website is currently undergoing scheduled maintenance.
+We’ll be back shortly. Thank you for your patience!
+    <div class="right-panel">
+      <div class="circle">
+        <img src="/assets/img/sicanlogo.png" alt="SiCAN Logo">
+        <div class="point p1 orange"><div class="num">01</div>Understanding of Inclusion Approach<br>and Development Management</div>
+        <div class="point p2 orange"><div class="num">02</div>Industry Foresightedness</div>
+        <div class="point p3 orange"><div class="num">03</div>Sectoral on-field Expertise</div>
+        <div class="point p4 orange"><div class="num">04</div>Corporate Governance</div>
+        <div class="point p5"><div class="num">05</div>New Age Tech-platform</div>
+        <div class="point p6"><div class="num">06</div>Research & Development</div>
+        <div class="point p7"><div class="num">07</div>Agile in Innovation</div>
+        <div class="point p8"><div class="num">08</div>Organisational Culture</div>
+      </div>
+    </div>
+  </div>
+				
+
+
+
+    <div id="footer"></div>
+
+    <!-- Go Top -->
+    <div class="go-top">
+        <i class='bx bxs-up-arrow'></i>
+        <i class='bx bxs-up-arrow'></i>
+    </div>
+    <!-- End Go Top -->
+
+    <!-- Essential JS -->
+    <script src="/assets/js/jquery.min.js"></script>
+    <script src="/assets/js/bootstrap.bundle.min.js"></script>
+    <!-- Form Validator JS -->
+    <script src="/assets/js/form-validator.min.js"></script>
+    <!-- Contact JS -->
+    <script src="/assets/js/contact-form-script.js"></script>
+    <!-- Ajax Chip JS -->
+    <script src="/assets/js/jquery.ajaxchimp.min.js"></script>
+    <!-- Mean Menu JS -->
+    <script src="/assets/js/jquery.meanmenu.js"></script>
+    <!--=== Owl Carousel Min JS ===-->
+    <script src="/assets/js/owl.carousel.min.js"></script>
+    <!--=== Wow Min JS ===-->
+    <script src="/assets/js/wow.min.js"></script>
+    <!--=== Odometer Min JS ===-->
+    <script src="/assets/js/odometer.min.js"></script>
+    <script src="/assets/js/jquery.appear.min.js"></script>
+    <!-- Nice Select JS -->
+    <script src="/assets/js/jquery.nice-select.min.js"></script>
+    <!--=== Magnific Popup Min JS ===-->
+    <script src="/assets/js/jquery.magnific-popup.min.js"></script>
+    <!-- Custom JS -->
+    <script src="/assets/js/custom.js"></script>
 </body>
+
 </html>
