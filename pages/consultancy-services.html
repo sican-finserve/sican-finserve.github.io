@@ -44,96 +44,6 @@
             $("#footer").load("../includes/footer.html");
         });
     </script>
-<style>
-/* CUSTOM CIRCLE LAYOUT STYLE */
-.container {
-  position: relative;
-}
-
-.left-panel h1 {
-  color: orange;
-  font-weight: bold;
-  margin: 0;
-  font-size: 36px;
-}
-.left-panel h2 {
-  margin-top: 10px;
-  font-size: 36px;
-  line-height: 1.2;
-  word-break: break-word;
-}
-
-.right-panel {
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 40px 0;
-}
-
-.circle {
-  width: 400px;
-  height: 400px;
-  border-radius: 50%;
-  border: 8px solid #0e4b74;
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 0 auto;
-}
-.circle img {
-  width: 70px;
-  height: auto;
-}
-
-.point {
-  position: absolute;
-  width: 140px;
-  text-align: center;
-  font-size: 13px;
-}
-.point .num {
-  font-weight: bold;
-  background: #0e4b74;
-  color: white;
-  border-radius: 50%;
-  width: 30px;
-  height: 30px;
-  display: inline-block;
-  line-height: 30px;
-  margin-bottom: 5px;
-}
-.point.orange .num {
-  background: orange;
-}
-
-/* Positioning 8 points around the circle */
-.p1 { top: -50px; left: 50%; transform: translateX(-50%); }
-.p2 { top: 40px; right: -60px; }
-.p3 { top: 150px; right: -90px; }
-.p4 { bottom: 40px; right: -60px; }
-.p5 { bottom: -50px; left: 50%; transform: translateX(-50%); }
-.p6 { bottom: 40px; left: -70px; }
-.p7 { top: 150px; left: -90px; }
-.p8 { top: 40px; left: -60px; }
-
-@media screen and (max-width: 768px) {
-  .circle {
-    width: 300px;
-    height: 300px;
-  }
-  .point {
-    font-size: 11px;
-    width: 120px;
-  }
-  .point .num {
-    width: 25px;
-    height: 25px;
-    line-height: 25px;
-  }
-}
-</style>
 
 </head>
 
@@ -152,6 +62,7 @@
     <!-- End Preloader -->
 
     <div id="header"></div>
+
 
 
 
